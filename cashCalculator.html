@@ -1,0 +1,25 @@
+<script src="PokerCalculator/cashCalculator.ts"></script>
+
+<body>
+  <h1>Adding 'a' and 'b'</h1>
+
+  <form action="/action_page.php">
+    <label for="cash">Name</label>
+    <input type="string" name="name" id="name">
+    <label for="cash">Cash</label>
+    <input type="number" name="cash" id="cash">
+    <label for="buyIns">No. of BuyIns</label>
+    <input type="number" name="buyIns" id="buyIns">
+    <label for="cashout">Cashout</label>
+    <input type="number" name="cashout" id="cashout"> 
+    <input type="submit" value="Submit">
+    <button 
+      onclick="addPlayer(
+        document.getElementById('name').value,
+        document.getElementById('cash').value.
+        document.getElementById('buyIns').value,
+        document.getElementById('cashout').value
+      )">
+      Add Player</button>
+  </form>
+</body>
